@@ -1,12 +1,19 @@
 public class main {
 
 
-    weatherSystemAlert weatherStation = new weatherSystemAlert();
+    public static void main (String [] args) {
 
-    googleHome device1 = new googleHome(weatherStation);
-    Iphone device2 = new Iphone(weatherStation);
 
-    tablet device3  = new tablet(weatherStation);
+        weatherSystemAlert weatherStation = new weatherSystemAlert();
+
+        googleHome device1 = new googleHome(weatherStation, "Clear sky");
+        Iphone device2 = new Iphone(weatherStation, "Clear sky");
+
+        tablet device3 = new tablet(weatherStation, "Clear sky");
+
+
+        weatherStation.setState("Raining!");
+    }
 
 
 

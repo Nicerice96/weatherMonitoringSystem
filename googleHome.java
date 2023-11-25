@@ -12,5 +12,8 @@ public class googleHome implements deviceObserver{
     @Override
     public void update() {
 
+        String updatedState = weatherStation.getState();
+        System.out.println("googleHome received update. New state: " + updatedState);
+
     }
 }

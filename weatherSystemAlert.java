@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class weatherSystemAlert implements  notifyWeather {
 
     private String state;
-    private ArrayList<deviceObserver> observersList;
+    private ArrayList<deviceObserver> observersList = new ArrayList<>();
 
 
     public weatherSystemAlert(){
@@ -51,5 +51,10 @@ public class weatherSystemAlert implements  notifyWeather {
         this.state = state;
         NotifyObseervers();
 
+    }
+
+    public String getState() {
+
+        return state;
     }
 }
